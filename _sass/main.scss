@@ -28,4 +28,72 @@ $primary-invert: $pink-invert;
 
 @import "../node_modules/bulma/bulma";
 
+.navbar {
+	display: flex;
+	.navbar-burger {
+		width: 1rem;
+	}
+	.navbar-menu {
+		flex-grow: 1;
+		padding: 0;
+		box-shadow: none;
+	}
+	.navbar-search {
+		width: 100%;
+		max-width: 504px;
+
+	}
+	.navbar-start {
+		display: block;
+	}
+}
+
+.pagination {
+	justify-content: center;
+	.is-first-page {
+		display: none;
+	}
+	.pagination-list {
+		justify-content: center;
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+	.pagination-previous, .pagination-next {
+		padding: 0 !important;
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+}
+
+.section {
+	padding: 24px;
+}
+
+.star-rating {
+	font-size: 0.75em;
+
+	.icon {
+		height: 0.75rem;
+		width: 0.75rem;
+	}
+}
+
+.therapist-card {
+	position: relative;
+	height: 128px;
+}
+
+.therapist-card-name {
+	.title {
+		margin-bottom: 0;
+	}
+}
+
+.therapist-card-rating {
+	position: absolute;
+	bottom: 0;
+}
+
+
+
 

@@ -6976,8 +6976,31 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
+.box {
+  box-shadow: none; }
+
+a.box:hover, a.box:focus {
+  background-color: whitesmoke;
+  box-shadow: none; }
+
+.filter-list .button {
+  display: block; }
+
+.filter-list .button:not(:last-child) {
+  margin-bottom: 0.5rem; }
+
+.filter-submit {
+  border-top: 1.5px whitesmoke solid; }
+
+.media + .media {
+  border-top: none; }
+
+.media img {
+  border-radius: 10px; }
+
 .navbar {
-  display: flex; }
+  display: flex;
+  padding: 12px; }
   .navbar .navbar-burger {
     width: 1rem; }
   .navbar .navbar-menu {
@@ -7003,6 +7026,10 @@ label.panel-block {
     flex-grow: 0;
     flex-shrink: 0; }
 
+.search-filters {
+  padding-right: 24px;
+  padding-left: 24px; }
+
 .section {
   padding: 24px; }
 
@@ -7012,13 +7039,16 @@ label.panel-block {
     height: 0.75rem;
     width: 0.75rem; }
 
-.therapist-card {
-  position: relative;
-  height: 128px; }
+.therapist-tags:not(:last-child) {
+  margin-bottom: 2rem !important; }
 
-.therapist-card-name .title {
-  margin-bottom: 0; }
-
-.therapist-card-rating {
-  position: absolute;
-  bottom: 0; }
+.therapist-tags-missing {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 0.5rem; }
+  .therapist-tags-missing .label {
+    margin-right: 0.5em;
+    font-weight: normal;
+    font-size: 100%; }

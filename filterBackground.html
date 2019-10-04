@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>allminds</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/bee9445e22.js"></script>
+  </head>
+  <body class="has-navbar-fixed-bottom">
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <span class="icon is-medium"><i class="fas fa-times fa-2x"></i></span>
+          <!-- <a class="delete is-large"></a> -->
+        </a>
+        <!-- <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a> -->
+      </div>
+      <div class="navbar-menu is-active">
+        <div class="navbar-start">
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar is-fixed-bottom" role="navigation" aria-label="main navigation">
+      <div class="navbar-menu is-active">
+        <div class="navbar-start">
+          <div class="navbar-item">
+            <a class="button is-primary is-medium is-fullwidth" href="index.html">
+              Show 23 Therapists
+            </a>
+        </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="container">
+        <h5 class="title is-5">Therapist Background</h5>
+        <p>Choose the desired background of your therapist
+        </p>
+        <br>
+
+        <div class="filter-list">
+          <p><strong>Gender</strong></p>
+          <button class="button is-light">Female</button>
+          <button class="button is-light">Male</button>
+          <button class="button is-light">Non-binary</button>
+          <br>
+          <p><strong>Title</strong></p>
+          <nav class="level is-mobile">
+            <div class="level-left">
+              <div class="level-item">
+                <button class="button is-light">Licensed therapist</button>
+              </div>
+              <div class="level-item">
+                <div class="dropdown is-hoverable">
+                  <div class="dropdown-trigger">
+                    <a aria-haspopup="true" aria-controls="dropdown-licensed-therapist">
+                      <span class="icon"><i class="fas fa-info-circle" aria-hidden="true"></i></span>
+                    </a>
+                  </div>
+                  <div class="dropdown-menu" id="dropdown-licensed-therapist" role="menu">
+                    <div class="dropdown-content">
+                      <div class="dropdown-item">
+                        <p>Licensed therapists commonly hold a master's degree and have completed <strong>two years of supervised practice</strong> to obtain a clinical license.</p>
+                        <p>They may use a variety of therapeutic techniques, including psychodynamic therapy or cognitive-behavioral therapy.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <nav class="level is-mobile">
+            <div class="level-left">
+              <div class="level-item">
+                <button class="button is-light">Associate therapist</button>
+              </div>
+              <div class="level-item">
+                <div class="dropdown is-hoverable">
+                  <div class="dropdown-trigger">
+                    <a aria-haspopup="true" aria-controls="dropdown-licensed-therapist">
+                      <span class="icon"><i class="fas fa-info-circle" aria-hidden="true"></i></span>
+                    </a>
+                  </div>
+                  <div class="dropdown-menu" id="dropdown-licensed-therapist" role="menu">
+                    <div class="dropdown-content">
+                      <div class="dropdown-item">
+                        <p>Associate therapists commonly hold a master's degree and are <strong>currently pursuing supervised practice</strong> to obtain a clinical license.</p>
+                        <p>They may use a variety of therapeutic techniques, including psychodynamic therapy or cognitive-behavioral therapy.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <nav class="level is-mobile">
+            <div class="level-left">
+              <div class="level-item">
+                <button class="button is-light">Psychologist</button>
+              </div>
+              <div class="level-item">
+                <div class="dropdown is-hoverable">
+                  <div class="dropdown-trigger">
+                    <a aria-haspopup="true" aria-controls="dropdown-licensed-therapist">
+                      <span class="icon"><i class="fas fa-info-circle" aria-hidden="true"></i></span>
+                    </a>
+                  </div>
+                  <div class="dropdown-menu" id="dropdown-licensed-therapist" role="menu">
+                    <div class="dropdown-content">
+                      <div class="dropdown-item">
+                        <p>Psychologists with a PhD earned their degree in four to seven years, and are fully trained in the assessment and treatment of all behavioral conditions.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <nav class="level is-mobile">
+            <div class="level-left">
+              <div class="level-item">
+                <button class="button is-light">Psychiatrist (MD)</button>
+              </div>
+              <div class="level-item">
+                <div class="dropdown is-hoverable">
+                  <div class="dropdown-trigger">
+                    <a aria-haspopup="true" aria-controls="dropdown-licensed-therapist">
+                      <span class="icon"><i class="fas fa-info-circle" aria-hidden="true"></i></span>
+                    </a>
+                  </div>
+                  <div class="dropdown-menu" id="dropdown-licensed-therapist" role="menu">
+                    <div class="dropdown-content">
+                      <div class="dropdown-item">
+                        <p>After completing medical school, Psychiatrists receive an additional four years of clinical training in mental health specialties. They treat emotional and mental disorders and are <strong>licensed to prescribe medication.</strong></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <br>
+          <p><strong>Years in practice</strong></p>
+          <button class="button is-light">less than 5 years</button>
+          <button class="button is-light">5 - 15 years</button>
+          <button class="button is-light">Over 15 years</button>
+
+        </div>
+      </div>
+    </section> 
+
+    <script type="text/javascript" src="lib/main.js"></script>
+
+  </body>
+</html>

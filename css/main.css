@@ -6976,6 +6976,9 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
+.has-navbar-fixed-bottom {
+  padding-bottom: 86.5px !important; }
+
 .box {
   box-shadow: none; }
 
@@ -6983,13 +6986,22 @@ a.box:hover, a.box:focus {
   background-color: whitesmoke;
   box-shadow: none; }
 
+.filter-list p {
+  margin-bottom: 0.5rem; }
+
 .filter-list .button {
   display: block; }
 
 .filter-list .button:not(:last-child) {
   margin-bottom: 0.5rem; }
 
-.filter-submit {
+.filter-list .level {
+  margin-bottom: 0.5rem; }
+
+.form {
+  max-width: 570px; }
+
+.is-fixed-bottom {
   border-top: 1.5px whitesmoke solid; }
 
 .media + .media {
@@ -7025,6 +7037,9 @@ a.box:hover, a.box:focus {
     padding: 0 !important;
     flex-grow: 0;
     flex-shrink: 0; }
+
+.price-input {
+  max-width: 96%; }
 
 .search-filters {
   padding-right: 24px;

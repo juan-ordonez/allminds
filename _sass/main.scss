@@ -28,6 +28,12 @@ $primary-invert: $pink-invert;
 
 @import "../node_modules/bulma/bulma";
 
+
+.has-navbar-fixed-bottom {
+	padding-bottom: 86.5px!important;
+}
+
+
 .box {
 	box-shadow: none;
 }
@@ -38,15 +44,25 @@ a.box:hover, a.box:focus {
 }
 
 .filter-list {
+	p {
+		margin-bottom: 0.5rem;
+	}
 	.button {
 		display: block;
 	}
 	.button:not(:last-child) {
 		margin-bottom: 0.5rem;
 	}
+	.level {
+		margin-bottom: 0.5rem;
+	}
 }
 
-.filter-submit {
+.form {
+	max-width: 570px;
+}
+
+.is-fixed-bottom {
 	border-top: 1.5px hsl(0, 0%, 96%) solid;
 }
 
@@ -98,6 +114,10 @@ a.box:hover, a.box:focus {
 		flex-grow: 0;
 		flex-shrink: 0;
 	}
+}
+
+.price-input {
+	max-width: 96%;
 }
 
 .search-filters {

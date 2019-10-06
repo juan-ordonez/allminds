@@ -72,6 +72,12 @@ a.box:hover, a.box:focus {
 	border-top: 1.5px hsl(0, 0%, 96%) solid;
 }
 
+.level {
+	.price-input {
+		display: block;
+	}
+}
+
 .media + .media {
 	border-top: none;
 }
@@ -122,9 +128,9 @@ a.box:hover, a.box:focus {
 	}
 }
 
-.price-input {
-	max-width: 96%;
-}
+// .price-input {
+// 	max-width: 96%;
+// }
 
 .search-filters {
 	padding-right: 24px;

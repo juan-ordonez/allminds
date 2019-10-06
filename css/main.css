@@ -6982,6 +6982,10 @@ label.panel-block {
 .box {
   box-shadow: none; }
 
+@media screen and (min-width: 1024px) {
+  .button.is-fullwidth {
+    max-width: 200px; } }
+
 a.box:hover, a.box:focus {
   background-color: whitesmoke;
   box-shadow: none; }

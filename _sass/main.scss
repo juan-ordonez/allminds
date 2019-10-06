@@ -38,6 +38,12 @@ $primary-invert: $pink-invert;
 	box-shadow: none;
 }
 
+.button.is-fullwidth {
+	@media screen and (min-width: 1024px) {
+		max-width: 200px;
+	}
+}
+
 a.box:hover, a.box:focus {
     background-color: hsl(0, 0%, 96%);
     box-shadow: none;

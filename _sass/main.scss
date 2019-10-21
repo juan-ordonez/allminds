@@ -1,33 +1,77 @@
 @charset "utf-8";
 
+@font-face {
+font-family: 'Airbnb Cereal App Book';
+font-style: normal;
+font-weight: normal;
+src: local('Airbnb Cereal App Book'), url('fonts/AirbnbCerealBook.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Airbnb Cereal App Light';
+font-style: normal;
+font-weight: normal;
+src: local('Airbnb Cereal App Light'), url('fonts/AirbnbCerealLight.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Airbnb Cereal App Medium';
+font-style: normal;
+font-weight: normal;
+src: local('Airbnb Cereal App Medium'), url('fonts/AirbnbCerealMedium.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Airbnb Cereal App Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Airbnb Cereal App Bold'), url('fonts/AirbnbCerealBold.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Airbnb Cereal App Extra Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Airbnb Cereal App Extra Bold'), url('fonts/AirbnbCerealExtraBold.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Airbnb Cereal App Black';
+font-style: normal;
+font-weight: normal;
+src: local('Airbnb Cereal App Black'), url('fonts/AirbnbCerealBlack.woff') format('woff');
+}
+
 // Customization
 
 // You can easily customize Bulma with your own variables.
-// Just uncomment the following block to see the result.
 
-/*
 // 1. Import the initial variables
 @import "../node_modules/bulma/sass/utilities/initial-variables";
 
 // 2. Set your own initial variables
-// Update the blue shade, used for links
-$blue: #06bcef;
-// Add pink and its invert
-$pink: #ff8080;
-$pink-invert: #fff;
-// Update the sans-serif font family
-$family-sans-serif: "Helvetica", "Arial", sans-serif;
-
+// $grey-dark: hsl(0, 0%, 29%);
+// $grey-darker: hsl(0, 0%, 21%);
+$family-sans-serif: 'Airbnb Cereal App Book', 'Airbnb Cereal App Light', 'Airbnb Cereal App Medium', 'Airbnb Cereal App Bold', 'Airbnb Cereal App Extra Bold','Airbnb Cereal App Black', sans-serif;
+$size-1: 2.7rem;
+$size-2: 2.25rem;
+$size-3: 1.8rem;
+$size-4: 1.35rem;
+$size-5: 1.125rem;
+$size-6: 0.9rem;
+$size-7: 0.8rem;
 // 3. Set the derived variables
-// Use the new pink as the primary color
-$primary: $pink;
-$primary-invert: $pink-invert;
+$title-color: $grey-dark;
+$content-heading-color: $grey-dark;
 
 // 4. Import the rest of Bulma
-*/
 
 @import "../node_modules/bulma/bulma";
-
 
 .has-navbar-fixed-bottom {
 	padding-bottom: 86.5px!important;
@@ -36,6 +80,15 @@ $primary-invert: $pink-invert;
 
 .box {
 	box-shadow: none;
+}
+
+.button {
+	font-weight: 400;
+	border-radius: 8px;
+}
+
+.button.is-light {
+	background-color: hsl(0, 0%, 93%);
 }
 
 .button.is-fullwidth {
@@ -55,9 +108,10 @@ a.box:hover, a.box:focus {
 	}
 	.button {
 		display: block;
+		font-size: $size-5;
 	}
 	.button:not(:last-child) {
-		margin-bottom: 0.5rem;
+		margin-bottom: 1rem;
 	}
 	.level {
 		margin-bottom: 0.5rem;
@@ -150,6 +204,12 @@ a.box:hover, a.box:focus {
 	}
 }
 
+.therapist-card {
+	.title {
+		margin-bottom: 0.5rem
+	}
+}
+
 .therapist-tags:not(:last-child) {
 	margin-bottom: 2rem !important;
 }
@@ -165,6 +225,14 @@ a.box:hover, a.box:focus {
 		font-weight: normal;
 		font-size: 100%; 
 	}
+}
+
+.therapist-title {
+	text-transform: uppercase !important;
+	color : $grey; 
+	font-size: $size-7;
+	font-weight: $weight-bold;
+	margin-bottom: 0.5rem;
 }
 
 

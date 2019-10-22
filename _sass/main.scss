@@ -64,19 +64,29 @@ $size-3: 1.8rem;
 $size-4: 1.35rem;
 $size-5: 1.125rem;
 $size-6: 0.9rem;
-$size-7: 0.8rem;
+$size-7: 0.7rem;
 // 3. Set the derived variables
 $title-color: $grey-dark;
 $content-heading-color: $grey-dark;
+$pagination-color: $turquoise;
+$pagination-border-color: $white;
+$pagination-current-background-color: $turquoise;
+$pagination-current-border-color: $turquoise;
 
 // 4. Import the rest of Bulma
 
 @import "../node_modules/bulma/bulma";
 
-.has-navbar-fixed-bottom {
-	padding-bottom: 86.5px!important;
+body.has-navbar-fixed-bottom {
+	padding-bottom: 71px;
 }
 
+hr {
+	margin-left: -24px !important;
+	width: 110%;
+	height: 1px;
+	background-color: $grey-lighter;
+}
 
 .box {
 	box-shadow: none;
@@ -123,7 +133,11 @@ a.box:hover, a.box:focus {
 }
 
 .is-fixed-bottom {
-	border-top: 1.5px hsl(0, 0%, 96%) solid;
+	border-top: 1px $grey-lighter solid;
+	padding: 4px !important;
+	.button {
+		height: 2.5em;
+	}
 }
 
 .level {
@@ -144,9 +158,8 @@ a.box:hover, a.box:focus {
 
 .navbar {
 	display: flex;
-	// padding-right: 12px;
-	// padding-left: 12px;
-	padding: 12px;
+	padding: 2px 12px 2px 12px;
+	border-bottom: 1px $grey-lighter solid;
 	.navbar-burger {
 		width: 1rem;
 	}
@@ -179,6 +192,10 @@ a.box:hover, a.box:focus {
 		padding: 0 !important;
 		flex-grow: 0;
 		flex-shrink: 0;
+		border-color: $turquoise;
+	}
+	.pagination-previous:hover, .pagination-next:hover {
+		border-color: $link-hover-border!important;
 	}
 }
 
@@ -189,6 +206,8 @@ a.box:hover, a.box:focus {
 .search-filters {
 	padding-right: 24px;
 	padding-left: 24px;
+	// padding-top: 11.61px;
+	padding-top: 24px;
 }
 
 .section {

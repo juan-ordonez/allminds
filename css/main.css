@@ -7082,11 +7082,6 @@ a.box:hover, a.box:focus {
   .pagination .pagination-previous:hover, .pagination .pagination-next:hover {
     border-color: #b5b5b5 !important; }
 
-.search-filters {
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-top: 24px; }
-
 .section {
   padding: 24px; }
 

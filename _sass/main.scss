@@ -72,6 +72,8 @@ $pagination-color: $turquoise;
 $pagination-border-color: $white;
 $pagination-current-background-color: $turquoise;
 $pagination-current-border-color: $turquoise;
+$link: $grey-dark;
+$link-hover: $black;
 
 // 4. Import the rest of Bulma
 
@@ -90,6 +92,7 @@ hr {
 
 .box {
 	box-shadow: none;
+	border: 1px $grey-lighter solid;;
 }
 
 .button {
@@ -131,6 +134,11 @@ a.box:hover, a.box:focus {
 .form {
 	max-width: 570px;
 }
+
+.home-alert {
+	a {
+		font-weight: $weight-bold;
+	}
 
 .is-fixed-bottom {
 	border-top: 1px $grey-lighter solid;
@@ -208,6 +216,7 @@ a.box:hover, a.box:focus {
 	// padding-left: 24px;
 	// padding-top: 11.61px;
 	// padding-top: 24px;
+	margin-bottom: 24px;
 }
 
 .section {
@@ -224,6 +233,7 @@ a.box:hover, a.box:focus {
 }
 
 .therapist-card {
+	border: none;
 	.title {
 		margin-bottom: 0.5rem
 	}

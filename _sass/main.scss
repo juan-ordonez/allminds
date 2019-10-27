@@ -64,7 +64,7 @@ $size-3: 1.8rem;
 $size-4: 1.35rem;
 $size-5: 1.125rem;
 $size-6: 0.9rem;
-$size-7: 0.7rem;
+$size-7: 0.8rem;
 // 3. Set the derived variables
 $title-color: $grey-dark;
 $content-heading-color: $grey-dark;
@@ -139,6 +139,23 @@ a.box:hover, a.box:focus {
 	a {
 		font-weight: $weight-bold;
 	}
+}
+
+.home-intro {
+	font-weight: $weight-bold;
+	color: $grey-dark;
+	font-size: $size-7;
+	margin-bottom: 24px;
+	display: flex;
+	align-items: center;
+	p {
+		margin-left: 0.5rem;
+	}
+	.icon {
+		margin: 8px;
+		color: $turquoise;
+	}
+}
 
 .is-fixed-bottom {
 	border-top: 1px $grey-lighter solid;

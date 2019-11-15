@@ -157,6 +157,10 @@ a.box:hover, a.box:focus {
 	}
 }
 
+.image.is-128x128 {
+	height: 160px;
+}
+
 .is-fixed-bottom {
 	border-top: 1px $grey-lighter solid;
 	padding: 4px !important;

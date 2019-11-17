@@ -135,6 +135,14 @@ a.box:hover, a.box:focus {
 	max-width: 570px;
 }
 
+.gif {
+	margin-left: 0px!important;
+	margin-right: 0px!important;
+	img {
+		border-radius: 10px;
+	}
+}
+
 .home-alert {
 	a {
 		font-weight: $weight-bold;
